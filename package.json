@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Ply Visualization",
   "license": "MIT",
+  "author": "Donald Oakes",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ply-ct/ply-viz.git"
