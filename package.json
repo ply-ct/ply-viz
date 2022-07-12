@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@kurkle/color": "^0.1.9",
-    "@ply-ct/ply": "^3.0.41",
+    "@ply-ct/ply": "^3.0.42",
     "chart.js": "^3.8.0",
     "chartjs-adapter-date-fns": "^2.0.0",
     "chartjs-node-canvas": "^4.1.6",

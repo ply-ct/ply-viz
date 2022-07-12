@@ -23,7 +23,8 @@
         text-align: center;
         font-size: 20px;
         font-weight: bold;
-        margin: 20px auto 5px auto;
+        margin: 10px auto 5px auto;
+        padding-top: 15px;
       }
       .main-nav {
         display: flex;
@@ -32,7 +33,6 @@
       .button-link {
         font: bold 11px Arial;
         background-color: #eeeeee;
-        color: #333333;
         padding: 2px 6px 2px 6px;
         border-top: 1px solid #cccccc;
         border-right: 1px solid #333333;
@@ -46,6 +46,7 @@
       .viz-container .viz-title {
         display: flex;
         margin: 0 30px;
+        padding-top: 10px;
       }
       .viz-anchor {
         flex-grow: 1;
@@ -72,14 +73,14 @@
       </div>
       <div class="main-nav">
         <a href="#request-throughput" class="button-link">Request Throughput</a>
-        <a href="#request-throughput" class="button-link">Response Times</a>
-        <a href="#request-throughput" class="button-link">Request Counts</a>
+        <a href="#response-times" class="button-link">Response Times</a>
+        <a href="#request-counts" class="button-link">Request Counts</a>
       </div>
       <div class="viz-container">
         <div class="viz-title">
-          <a id="request-throughput" href="#request-throughput" class="viz-anchor"
-            >Requests Submitted per Second</a
-          >
+          <div class="viz-anchor">
+            <a id="request-throughput" href="#request-throughput">Requests Submitted per Second</a>
+          </div>
           <a href="#top">Back to Top</a>
         </div>
         <div onclick="chartClicked()">
@@ -89,9 +90,9 @@
 
       <div class="viz-container">
         <div class="viz-title">
-          <a id="response-times" href="#response-times" class="viz-anchor"
-            >Mean Response Times in Milliseconds</a
-          >
+          <div class="viz-anchor">
+            <a id="response-times" href="#response-times">Mean Response Times in Milliseconds</a>
+          </div>
           <a href="#top">Back to Top</a>
         </div>
         <div onclick="chartClicked()">
@@ -101,7 +102,9 @@
 
       <div class="viz-container">
         <div class="viz-title">
-          <a id="request-counts" href="#request-counts" class="viz-anchor">Cumulative Requests</a>
+          <div class="viz-anchor">
+            <a id="request-counts" href="#request-counts" class="viz-anchor">Cumulative Requests</a>
+          </div>
           <a href="#top">Back to Top</a>
         </div>
         <div onclick="chartClicked()">
